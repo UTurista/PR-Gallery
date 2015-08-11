@@ -1,0 +1,44 @@
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes slide-left { from { left:-100%; } to { left:0; } }
+@-moz-keyframes slide-left { from { left:-100%; } to { left:0; } }
+@keyframes slide-left { from { left:-100%; } to { left:0; } }
+
+.slide-left{
+    left:-100%;
+    position: relative;
+
+    -webkit-animation:slide-left ease-in 1;
+    -moz-animation:slide-left ease-in 1;
+    animation:slide-left ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value */
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes slide-up { from { bottom:-50px; opacity: 0;} to { bottom: 0px; opacity: 1;} }
+@-moz-keyframes slide-up { from { bottom:-50px; opacity: 0;} to { bottom: 0px; opacity: 1;} }
+@keyframes slide-up { from { bottom:-50px; opacity: 0;} to { bottom: 0px; opacity: 1;} }
+
+.slide-up{
+    bottom:-50px;
+    /*position: relative;*/
+    opacity: 0;
+
+    -webkit-animation:slide-up ease-in 1;
+    -moz-animation:slide-up ease-in 1;
+    animation:slide-up ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value */
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}

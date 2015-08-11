@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/resources/favicon.ico" type="image/x-icon">
+
+	 <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/gallery_style.css">
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/prspy.js"></script>
+
+    <title>Project Reality</title>
+
+
+</head>
+<body>
+<div id="Wrapper">
+    <div id="Background"></div>
+    <div id="Header">
+        <div id="Menu-button">
+            <div id="Menu-button-layer-wrapper">
+                <span class="menu-button-layer"></span>
+                <span class="menu-button-layer"></span>
+                <span class="menu-button-layer"></span>
+            </div>
+        </div>
+        <div id="Title-Wrapper">
+			<div id="Title">Project Reality</div>
+			<div id="SubTitle"></div>
+		</div>
+    </div>
+	<div id="Body-Wrapper">
+		 <div id="Container-Navigation">
+			 <div id="Nav">
+				<ul>
+					<a href="http://www.realitymod.com/forum/"><li>Forums</li></a>
+					<a href="http://www.realitymod.com/prspy/"><li>PRSPY</li></a>
+				</ul>
+			 </div>
+		 </div>
+		<div id="Container-Wrapper">
+			
+			<div id="MapOverview" class="oHide"></div>
+
+			<div id="Container">
+
+			</div>
+
+			<div id="PRContainer" class="hide">
+				<div id="Assets-header">
+
+					<div class="team-header teamA selected">
+						<div style="display: table;margin: 0 auto;">
+							<div class="name">Team A</div>
+							<div class="flag"></div>
+						</div>
+					</div>
+
+
+					<div class="team-header teamB">
+						<div style="display: table;margin: 0 auto;">
+							<div class="name">Team B</div>
+							<div class="flag"></div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div id="Assets-container">
+					<div class="asset-pane">
+						<div class="assets teamA"></div>
+						<div class="assets teamB"></div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div id="Fab-Anchor">
+
+			</div>
+			<div id="Fab-Shadow" onclick="closeFABs()" class="hide">
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
