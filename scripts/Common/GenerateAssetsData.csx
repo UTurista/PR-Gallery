@@ -77,8 +77,8 @@ ScriptResult GenerateData(string path, IEnumerable<Gpo> gpos, ConcurrentDictiona
 		Color color;
 		colors.TryGetValue(gpo.LayerInfo.MapName, out color);
         assetsJson += String.Format("\"MapName\": \"{0}\", \"FriendlyMapName\": \"{1}\", \"GameMode\":\"{2}\",\"Layer\": {3}, \"MapSize\": {4}, \"Team1FriendlyName\":  \"{5} \",\"Team1FriendlyNameShort\":  \"{6}\",\"Team2FriendlyName\":  \"{7} \",\"Team2FriendlyNameShort\":  \"{8} \", \"Color\": \"{9}\", \"Spawners\":",
-            gpo.LayerInfo.MapName,
-            gpo.LayerInfo.FriendlyMapName,
+            gpo.LayerInfo.MapName.Replace("_sp", ""),
+            gpo.LayerInfo.FriendlyMapName.Replace("_sp", ""),
             GameModeData.GetId(gpo.LayerInfo.GameMode),
             (int)gpo.LayerInfo.Layer,
             gpo.LayerInfo.MapSize,
