@@ -439,3 +439,31 @@ div#MapOverview {
     background-size: auto 70%;
     }
 }
+
+/* ====================================================================
+ * ==============              Search          ====================
+ * ====================================================================
+ */
+ 
+div#Search {
+    position: absolute;      
+    top: 25px;      
+    right: 25px;
+    height: 20px;
+}
+
+#Search input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    border-bottom: solid 1px #3399CC;
+    outline: 0;
+    color: white;
+    height: 100%;
+}
+
+#Search img {
+    height: 100%;
+    float: left;
+    margin: 0 5px;
+}

@@ -258,3 +258,32 @@ function rowAsset(index, name, qt, delay, start, img) {
 
 }
 
+/* ======================================================================================
+ * =========================             Search          ================================
+ * ======================================================================================
+ */
+ 
+ $(window).ready(function () {
+  $('#Search input').on('input', function() { 
+    filterMapsByName($(this).val());
+  });
+});
+ 
+ 
+function filterMapsByName(nameToFilter){
+  $(".tile-container").each(function(){
+    var mapName = $(this).find(".tile-card").text();
+
+    if(nameToFilter == "" || mapName.toLowerCase().indexOf(nameToFilter.toLowerCase()) >= 0 )
+      $(this).removeClass("hide");
+    else
+       $(this).addClass("hide");
+     
+  });
+}
+ 
+ 
+ 
+ 
+ 
+ 
