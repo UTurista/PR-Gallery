@@ -327,11 +327,11 @@ function getJSON(url, calback) {
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function () {
-		console.log(xmlhttp.readyState);
-		console.log(xmlhttp.status);
-		console.log(">"+xmlhttp.responseText.length);
+		//console.log(xmlhttp.readyState);
+		//console.log(xmlhttp.status);
+		//console.log(">"+xmlhttp.responseText.length);
         if (xmlhttp.readyState == 4 && (xmlhttp.status == 200 || xmlhttp.status == 304)) {
-			console.log(">"+xmlhttp.responseText);
+			//console.log(">"+xmlhttp.responseText);
             var json = JSON.parse(xmlhttp.responseText);
             calback(json);
         }
