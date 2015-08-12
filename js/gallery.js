@@ -244,7 +244,7 @@ function rowAsset(index, name, qt, delay, start, img) {
 
     var html = '';
     html += '<div class="asset-row slide-up" style="-webkit-animation-delay: ' + (index * 50) + 'ms; animation-delay:' + (index * 50) + 'ms"> ';
-    html += '<div class="asset-img" style="background-image: url(img/assets/mini_heavyhelo.png)"></div>'
+    //html += '<div class="asset-img" style="background-image: url(img/assets/mini_heavyhelo.png)"></div>'
     html += '<div class="info">';
     html += '<div>';
     html += '<div class="asset-qt">' + qt + 'x</div>';
