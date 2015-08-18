@@ -92,15 +92,15 @@ $(window).ready(function () {
 
 
 
-
+        $('html,body').scrollTop(0);
         // $('body').addClass('noscroll');
         // $('#SubTiles').addClass('open');
         $('#Background').css('background-image', 'url("img/maps/' + mapName+ '/background.jpg")');
-		$('#Background').addClass('ready');
+        $('#Background').addClass('ready');
         $('#Header').removeClass("opaque");
         $('#Container').addClass('hide');
         $('#PRContainer').removeClass('hide');
-		$("#Menu-button").addClass("open").addClass("galleryPage");
+        $("#Menu-button").addClass("open").addClass("galleryPage");
         // $('#Filter-container').addClass('hide');
 
         var layoutsHTML = '<ul>';
