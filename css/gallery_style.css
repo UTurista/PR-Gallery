@@ -44,7 +44,6 @@ div#PRContainer {
 
 .tile-container:hover {
     cursor: pointer;
-    box-shadow: 0 5px 10px black;
 }
 
 .tile-container img {
@@ -68,7 +67,7 @@ div#PRContainer {
     background: rgba(17, 17, 17, 0.8);
     position: absolute;
     text-align: CENTER;
-    bottom: 0;
+    bottom: -100%;
     padding: 2px 0;
     font-size: 15px;
 }
