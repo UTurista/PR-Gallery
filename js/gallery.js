@@ -25,7 +25,7 @@ $(window).ready(function () {
 			}else{//If map is not yet in gallery
 				var tileMarkup = '<div id="Map-'+mapName+ '" class="tile-container size-'+metaMap[key].MapSize + ' fc-'+metaMap[key].Team2FriendlyNameShort +' fc-'+metaMap[key].Team1FriendlyNameShort+'" data="'+key+'" style="background-color:'+metaMap[key].Color+';">';
 				tileMarkup += "<div class='tile-card'>";
-				tileMarkup += metaMap[key].FriendlyMapName;
+				tileMarkup += metaMap[key].FriendlyMapName + " ("+metaMap[key].MapSize+" Km)";
 				tileMarkup += "</div>";
 				tileMarkup += "<img class='mix tile' src='img/maps/" + mapName + "/tile.jpg'>";
 				tileMarkup += "<div class='meta-information'>";
@@ -187,7 +187,7 @@ $(window).ready(function () {
 function buildLayout(layout) {
     var map = ASSETS_JSON[layout];
 
-	$('#Title').html(map.FriendlyMapName);
+	$('#Title').html(map.FriendlyMapName +" ("+map.MapSize+" Km)");
 	$('#SubTitle').html(dictionary(map.GameMode) + ' ' + dictionary(map.Layer));
 
   
