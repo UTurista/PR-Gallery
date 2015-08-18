@@ -91,7 +91,7 @@ $(window).ready(function () {
         }
 
 
-
+        $('#Search').addClass('hide');
         $('html,body').scrollTop(0);
         // $('body').addClass('noscroll');
         // $('#SubTiles').addClass('open');
@@ -147,15 +147,16 @@ $(window).ready(function () {
 $(window).ready(function () {
 
 
-	$('#Header').on('click', '.galleryPage', function () {
-		closeFABs();
-		$('#Title').html("Project Reality");
-        $('#SubTitle').html('MapGallery')
-		$('#Background').removeClass('ready');
-		$('#Container').removeClass('hide');
-        $('#PRContainer').addClass('hide');
-		$('#Fab-Anchor').html('');
-	});
+  $('#Header').on('click', '.galleryPage', function () {
+    closeFABs();
+    $('#Title').html("Project Reality");
+    $('#SubTitle').html('MapGallery')
+    $('#Background').removeClass('ready');
+    $('#Container').removeClass('hide');
+    $('#PRContainer').addClass('hide');
+    $('#Fab-Anchor').html('');
+    $('#Search').removeClass('hide');
+  });
 });
 
 
