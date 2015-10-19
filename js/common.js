@@ -439,11 +439,11 @@ function toggleMapOverview() {
     if (mView.hasClass('oHide')) {
         mView.removeClass('oHide'); 
         $('#Fab-Shadow').removeClass('hide')
-        $("body").addClass('noScroll');
+        //$("body").addClass('noScroll');
     }else{
         mView.addClass('oHide');
         $('#Fab-Shadow').addClass('hide')
-        $("body").removeClass('noScroll');
+        //$("body").removeClass('noScroll');
      }
       
 }

@@ -192,7 +192,7 @@ function buildLayout(layout) {
 
   
 
-    $('#MapOverview').css('background-image', "url(img/maps/"+map.MapName+"/mapOverview_"+map.GameMode+"_"+map.Layer+".png)");
+    $('#MapOverview img').attr("src", "img/maps/"+map.MapName+"/mapOverview_"+map.GameMode+"_"+map.Layer+".png");
 
 
     $('.assets.teamA').html('');//RESET
